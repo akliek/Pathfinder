@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="finder"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ykliek/Desktop/finder/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ykliek/Desktop/finder/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ykliek/Desktop/finder/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="finder">
+				<Option output="/home/ykliek/Desktop/finder/cmake-build-debug/finder" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ykliek/Desktop/finder/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ykliek/Desktop/finder/inc"/>
+					<Add directory="/home/ykliek/Desktop/finder/libmx/inc"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 finder"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="finder/fast">
+				<Option output="/home/ykliek/Desktop/finder/cmake-build-debug/finder" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ykliek/Desktop/finder/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ykliek/Desktop/finder/inc"/>
+					<Add directory="/home/ykliek/Desktop/finder/libmx/inc"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 finder/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ykliek/Desktop/finder/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ykliek/Desktop/finder/inc/pathfinder.h">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/inc/libmx.h">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_binary_search.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_bubble_sort.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_count_substr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_count_words.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_create_node.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_del_extra_spaces.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_del_strarr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_file_to_str.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_foreach.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_get_char_index.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_get_sudstr_index.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_hex_to_nbr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_isalpha.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_isdigit.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_isspace.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_itoa.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_list_size.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memccpy.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memchr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memcmp.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memcpy.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memmem.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memmove.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memrchr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_memset.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_nbr_to_hex.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_pop_back.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_pop_front.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_pow.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_print_strarr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_print_unicode.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_printchar.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_printerr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_printint.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_printstr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_push_back.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_push_front.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_quicksort.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_read_line.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_realloc.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_replace_substr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_sort_list.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_sqrt.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_str_reverse.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strcat.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strchr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strcmp.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strcpy.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strdel.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strdup.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strjoin.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strlen.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strncmp.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strncpy.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strndup.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strnew.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strsplit.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strstr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_strtrim.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_substr.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/libmx/src/mx_swap_char.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/src/algorithm.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/src/main.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/src/read_file.c">
+			<Option target="finder"/>
+		</Unit>
+		<Unit filename="/home/ykliek/Desktop/finder/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
