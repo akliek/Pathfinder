@@ -1,8 +1,11 @@
-#include "pathfinder.h"
+#include "../inc/pathfinder.h"
 
 int main(int argc, char **argv) {
-    head = NULL;
+	char *line;
 	int fd = open(argv[1], O_RDONLY);
-	start_reading(fd);
-	return 0;
+	mx_read_line(&line, 1, '\n', fd);
+	int islands_num = mx_atoi(line);
+	print(islands_num, fd);
+
+	mx_strdel(&line);
 }

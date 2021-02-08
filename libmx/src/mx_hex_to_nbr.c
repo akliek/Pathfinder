@@ -6,8 +6,9 @@ unsigned long mx_hex_to_nbr(const char *hex) {
     int i;
     int len;
 
-    if (hex == NULL)
-    	return 0;
+    if (hex == NULL) {
+	    return 0;
+    }
 	len = mx_strlen(hex) - 1;
     for(i = 0; hex[i] != '\0'; i++) {
         if(hex[i] >= '0'&& hex[i] <= '9')

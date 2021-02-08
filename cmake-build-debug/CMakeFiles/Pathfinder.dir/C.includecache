@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/akliek/Desktop/Pathfinder/inc/pathfinder.h
+../libmx/inc/libmx.h
+/home/akliek/Desktop/Pathfinder/libmx/inc/libmx.h
+
+/home/akliek/Desktop/Pathfinder/libmx/inc/libmx.h
+unistd.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+limits.h
+-
+stdbool.h
+-
+fcntl.h
+-
+malloc.h
+-
+
+/home/akliek/Desktop/Pathfinder/src/algorithm.c
+../inc/pathfinder.h
+/home/akliek/Desktop/Pathfinder/inc/pathfinder.h
+
+/home/akliek/Desktop/Pathfinder/src/print.c
+../inc/pathfinder.h
+/home/akliek/Desktop/Pathfinder/inc/pathfinder.h
+

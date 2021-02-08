@@ -4,7 +4,7 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
     char *res;
     int i, count = 0;
 
-    if (str == NULL | sub == NULL | replace == NULL)
+    if (str == NULL || sub == NULL || replace == NULL)
     	return NULL;
     for (i = 0; str[i]; i++)
         if (strstr(&str[i], sub) == &str[i]) {

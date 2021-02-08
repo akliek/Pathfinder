@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
-project(finder C)
+project(Pathfinder C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(inc)
 include_directories(libmx/inc)
 
-add_executable(finder
+add_executable(Pathfinder
         inc/pathfinder.h
         libmx/inc/libmx.h
         libmx/src/mx_binary_search.c
@@ -70,6 +70,8 @@ add_executable(finder
         libmx/src/mx_strtrim.c
         libmx/src/mx_substr.c
         libmx/src/mx_swap_char.c
-        src/algorithm.c
+        libmx/src/mx_atoi.c
         src/main.c
-        src/read_file.c)
+        src/parse.c
+        src/algorithm.c
+        src/print.c)

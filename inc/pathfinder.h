@@ -1,25 +1,20 @@
 #ifndef PATHFINDER_H
 #define PATHFINDER_H
 
-#include "libmx.h"
+#include "../libmx/inc/libmx.h"
 
-typedef struct		s_link {
-	int				dist;
-	struct s_list	*island;
-}					t_link;
+typedef struct  s_islands {
+	char        **names;
+	int         **matrix;
+}               t_islands;
 
-typedef struct		s_island {
-	char			*island_name;
-	t_list			*route;
-	bool			checked;
-	int 			shortest_dist;
-}					t_island;
+typedef struct  s_out {
+	int         *dist;
+	int         *parent;
+}               t_out;
 
-t_list *head;
-
-t_list	*find_by_name(t_list *map, const char *island_name);
-void    island_init(t_island *island_n, t_list *map, char **lines);
-void	parse_line(t_list *map, char *line);
-void	start_reading(int fd);
+t_islands parse(int fd, int islands_num);
+t_out *algorithm(int **matrix, int src, int islands_num);
+void print(int island_num, int fd);
 
 #endif

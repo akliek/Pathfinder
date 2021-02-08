@@ -1,4 +1,4 @@
-/opt/clion-2020.1.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ykliek/Desktop/finder
+/snap/clion/139/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/akliek/Desktop/Pathfinder
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ykliek/Desktop/finder/cmake-build-debug
+-- Build files have been written to: /home/akliek/Desktop/Pathfinder/cmake-build-debug

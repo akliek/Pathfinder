@@ -80,7 +80,7 @@ void *mx_realloc(void *ptr, size_t size);
 
 t_list *mx_create_node(void *data);
 void mx_push_front(t_list **list, void *data);
-void mx_push_back(t_list *list, void *data);
+void mx_push_back(t_list **list, void *data);
 void mx_pop_front(t_list **list);
 void mx_pop_back(t_list **list);
 int mx_list_size(t_list *list);
@@ -95,5 +95,6 @@ char *mx_substr(char const *s, unsigned int start, size_t len);
 char *mx_strchr(const char *s, int c);
 void mx_printerr(const char *s);
 bool mx_isalpha(int c);
+int mx_atoi(char *str);
 
 #endif
