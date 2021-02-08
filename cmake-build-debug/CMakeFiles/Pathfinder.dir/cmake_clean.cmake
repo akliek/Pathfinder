@@ -65,6 +65,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pathfinder.dir/src/main.c.o"
   "CMakeFiles/Pathfinder.dir/src/parse.c.o"
   "CMakeFiles/Pathfinder.dir/src/print.c.o"
+  "CMakeFiles/Pathfinder.dir/src/validation.c.o"
   "Pathfinder"
   "Pathfinder.pdb"
 )

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/139/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/139/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akliek/Desktop/Pathfinder
+CMAKE_SOURCE_DIR = /Users/akliek/Desktop/Pathfinder
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akliek/Desktop/Pathfinder/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/akliek/Desktop/Pathfinder/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/akliek/Desktop/Pathfinder/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/139/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/139/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akliek/Desktop/Pathfinder/cmake-build-debug/CMakeFiles /home/akliek/Desktop/Pathfinder/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akliek/Desktop/Pathfinder/cmake-build-debug/CMakeFiles /Users/akliek/Desktop/Pathfinder/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akliek/Desktop/Pathfinder/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akliek/Desktop/Pathfinder/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1925,6 +1925,33 @@ src/print.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pathfinder.dir/build.make CMakeFiles/Pathfinder.dir/src/print.c.s
 .PHONY : src/print.c.s
 
+src/validation.o: src/validation.c.o
+
+.PHONY : src/validation.o
+
+# target to build an object file
+src/validation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pathfinder.dir/build.make CMakeFiles/Pathfinder.dir/src/validation.c.o
+.PHONY : src/validation.c.o
+
+src/validation.i: src/validation.c.i
+
+.PHONY : src/validation.i
+
+# target to preprocess a source file
+src/validation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pathfinder.dir/build.make CMakeFiles/Pathfinder.dir/src/validation.c.i
+.PHONY : src/validation.c.i
+
+src/validation.s: src/validation.c.s
+
+.PHONY : src/validation.s
+
+# target to generate assembly for a file
+src/validation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pathfinder.dir/build.make CMakeFiles/Pathfinder.dir/src/validation.c.s
+.PHONY : src/validation.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2132,6 +2159,9 @@ help:
 	@echo "... src/print.o"
 	@echo "... src/print.i"
 	@echo "... src/print.s"
+	@echo "... src/validation.o"
+	@echo "... src/validation.i"
+	@echo "... src/validation.s"
 .PHONY : help
 
 

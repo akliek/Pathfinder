@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.17)
 project(Pathfinder C)
 
 set(CMAKE_C_STANDARD 11)
@@ -9,6 +9,7 @@ include_directories(libmx/inc)
 add_executable(Pathfinder
         inc/pathfinder.h
         libmx/inc/libmx.h
+        libmx/src/mx_atoi.c
         libmx/src/mx_binary_search.c
         libmx/src/mx_bubble_sort.c
         libmx/src/mx_count_substr.c
@@ -70,8 +71,8 @@ add_executable(Pathfinder
         libmx/src/mx_strtrim.c
         libmx/src/mx_substr.c
         libmx/src/mx_swap_char.c
-        libmx/src/mx_atoi.c
+        src/algorithm.c
         src/main.c
         src/parse.c
-        src/algorithm.c
-        src/print.c)
+        src/print.c
+        src/validation.c)
