@@ -26,11 +26,12 @@ int **create_matrix(int num, int n) {
 
 t_islands parse(int fd, int islands_num) {
 	int i = 0;
+	int j = 2;
 	char *line;
 	t_islands island;
 	int index1, index2;
 	island.matrix = create_matrix(islands_num, 0);
-	island.names = (char **)malloc((islands_num + 1) * sizeof(char *));
+	island.names = (char **)malloc((islands_num) * sizeof(char *));
 
 	while (mx_read_line(&line, 1, '\n', fd) > 0) {
 		line = mx_replace_substr(line, ",", "-");
@@ -43,6 +44,13 @@ t_islands parse(int fd, int islands_num) {
 			if (mx_strcmp(island.names[j], lines[1]) == 0)
 				index2 = j;
 		}
+		if (mx_strcmp(lines[0], lines[1]) == 0) {
+			mx_printerr("error: line ");
+			mx_printint(j);
+			mx_printerr(" is not valid\n");
+			exit(1);
+		}
+		j++;
 		island.matrix[index1][index2] = mx_atoi(lines[2]);
 		island.matrix[index2][index1] = mx_atoi(lines[2]);
 		mx_strdel(&line);

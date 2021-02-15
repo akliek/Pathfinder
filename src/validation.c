@@ -22,7 +22,7 @@ void file_exist (char **argv, int fd) {
 	}
 }
 
-void mx_first_line_invalid(char *content) {
+void first_line_invalid(char *content) {
 	for (int i = 0; content[i] != '\n'; i++)
 		if (mx_isdigit(content[i]) == 0) {
 			mx_printchar(content[i]);
@@ -31,14 +31,14 @@ void mx_first_line_invalid(char *content) {
 		}
 }
 
-void mx_erroor_message(int line_num) {
+void erroor_message(int line_num) {
 	mx_printerr("error: line ");
 	mx_printint(line_num);
 	mx_printerr(" is not valid\n");
 	exit(1);
 }
 
-void mx_line_invalid(char *content) {
+void line_invalid(char *content) {
 	int i;
 	int line_num = 2;
 
@@ -46,13 +46,13 @@ void mx_line_invalid(char *content) {
 	for (i += 2; content[i] != '\0'; i++ && line_num++) {
 		for (; content[i] != '-'; i++)
 			if (mx_isalpha(content[i]) == 0)
-				mx_erroor_message(line_num);
+				erroor_message(line_num);
 		for (i += 1; content[i] != ','; i++)
 			if (mx_isalpha(content[i]) == 0)
-				mx_erroor_message(line_num);
+				erroor_message(line_num);
 		for (i += 1; content[i] != '\n'; i++)
 			if (!mx_isdigit(content[i]))
-				mx_erroor_message(line_num);
+				erroor_message(line_num);
 	}
 }
 
@@ -60,7 +60,8 @@ void validation(char **argv, int fd) {
 	char *content = mx_file_to_str(argv[1]);
 	file_empty(argv, fd);
 	file_exist(argv, fd);
-	mx_first_line_invalid(content);
-	mx_line_invalid(content);
+	first_line_invalid(content);
+	line_invalid(content);
 	mx_strdel(&content);
+	close(fd);
 }
